@@ -1,4 +1,5 @@
 import { LikeButton } from "./like-button";
+import { Socials } from "./socials";
 
 export default function Home() {
 
@@ -8,9 +9,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center sm:text-left">
           Austin Hunt
         </h1>
-        <h2 className="text-2xl font-bold text-center sm:text-left">
-          Software Engineer
-        </h2>
+        <Socials />
         <p className="text-lg text-center sm:text-left">
           I am a software engineer with a passion for building web applications. I love to learn new technologies and improve my skills. AI generated this text, but I am a real person. I promise!
         </p>
