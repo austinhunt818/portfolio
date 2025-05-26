@@ -10,7 +10,6 @@ export function LikeButton() {
     };
     
     return (
-        <>
         <div className="flex items-center gap-4">
             <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded" onClick={handleLike}>
                 Like
@@ -19,6 +18,5 @@ export function LikeButton() {
                 {likes} {likes === 1 ? "Like" : "Likes"}
             </p>
         </div>
-        </>
     );
     }
