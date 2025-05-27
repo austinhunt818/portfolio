@@ -94,12 +94,31 @@ export function NavDrawer() {
           <ul className="flex-grow space-y-4">
             <li>
               <a
-                href="#"
                 className="block p-3 rounded-md text-gray-800 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-blue-900 transition duration-200 ease-in-out text-lg font-medium"
-                onClick={closeDrawer} // Closes drawer when a link is clicked
+                onClick={() => {
+                  closeDrawer();
+                  const element = document.getElementById('profile');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
-                Home
+                Profile
               </a>
+            </li>
+            <li>
+                <a
+                className="block p-3 rounded-md text-gray-800 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-blue-900 transition duration-200 ease-in-out text-lg font-medium"
+                onClick={() => {
+                  closeDrawer();
+                  const element = document.getElementById('projects');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                >
+                Projects
+                </a>
             </li>
           </ul>
 

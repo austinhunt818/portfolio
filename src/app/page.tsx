@@ -1,4 +1,5 @@
 import { LikeButton } from "./components/like-button";
+import { Projects } from "./components/projects";
 import { NavDrawer } from "./components/navDrawer";
 import { Profile } from "./components/profile";
 import { Socials } from "./components/socials";
@@ -13,6 +14,9 @@ export default function Home() {
         </h1>
         <Socials />
         <Profile />
+        <br></br>
+        <Projects />
+
         <NavDrawer />
         {/* <p className="text-lg text-center sm:text-left">
           Here's an interactive like button to show that I can code:
