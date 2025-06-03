@@ -34,10 +34,10 @@ export function Socials(){
                 Resume
             </a>
             <a href="https://github.com/austinhunt818" className="transition-transform hover:scale-125">
-                <img src={isDarkMode ? "/github-mark-white.svg" : "/github-mark.svg"} alt="GitHub" className="h-12 w-12" />
+                <img src={isDarkMode ? "logos/github-mark-white.svg" : "logos/github-mark.svg"} alt="GitHub" className="h-12 w-12" />
             </a>
             <a href="https://www.linkedin.com/in/austin-hunt-0183342b4/" className="transition-transform hover:scale-125">
-                <img src="/linkedin.svg" alt="LinkedIn" className="h-12 w-12" /> 
+                <img src="logos/linkedin.svg" alt="LinkedIn" className="h-12 w-12" /> 
             </a>
         </div>
     );
