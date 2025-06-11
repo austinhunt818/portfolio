@@ -1,21 +1,23 @@
-
 'use client';
 
 import { useEffect, useState } from "react";
 
 export function Socials(){
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        if(document.documentElement.classList.contains('dark')) {
-            console.log("Dark mode is enabled");
-            return true; // Dark mode is enabled
-        }
-    });
+    const [isDarkMode, setIsDarkMode] = useState(false); // Initialize with a default value
 
     useEffect(() => {
+        // Set initial state based on document class
+        const initialIsDark = document.documentElement.classList.contains('dark');
+        setIsDarkMode(initialIsDark);
+        if (initialIsDark) {
+            console.log("Dark mode is enabled");
+        }
+
         const observer = new MutationObserver(mutations => {
             mutations.forEach(mutation => {
             if (mutation.attributeName === 'class') {
-                setIsDarkMode(document.documentElement.classList.contains('dark'));
+                const currentIsDark = document.documentElement.classList.contains('dark');
+                setIsDarkMode(currentIsDark);
             }
             });
         });

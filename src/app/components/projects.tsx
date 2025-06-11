@@ -4,18 +4,20 @@ import { useEffect, useState } from "react";
 
 export function Projects() {
     // TODO: refactor to have a more global and abstract way to handle dark mode throughout components
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-            if(document.documentElement.classList.contains('dark')) {
-                console.log("Dark mode is enabled");
-                return true; // Dark mode is enabled
-            }
-        });
+    const [isDarkMode, setIsDarkMode] = useState(false);
     
         useEffect(() => {
+            const initialIsDark = document.documentElement.classList.contains('dark');
+            setIsDarkMode(initialIsDark);
+            if (initialIsDark) {
+                console.log("Dark mode is enabled");
+            }
+
             const observer = new MutationObserver(mutations => {
                 mutations.forEach(mutation => {
                 if (mutation.attributeName === 'class') {
-                    setIsDarkMode(document.documentElement.classList.contains('dark'));
+                    const currentIsDark = document.documentElement.classList.contains('dark');
+                    setIsDarkMode(currentIsDark);
                 }
                 });
             });
@@ -98,7 +100,7 @@ export function Projects() {
                 <div className="flex flex-col sm:flex-row gap-20 mb-4">
                     <div className="w-2/5">
                         <p className="text-lg">
-                            Using AWS's lambdas and dynamoDB, the app allows for the jingles to be saved, loaded, edited, and deleted. The songs are stored as a string, represented by a sequence of note names or dashes. This persistence allows users to come back and listen to jingles the made in the past, and edit them if they desire.
+                            Using AWS&apos;s lambdas and dynamoDB, the app allows for the jingles to be saved, loaded, edited, and deleted. The songs are stored as a string, represented by a sequence of note names or dashes. This persistence allows users to come back and listen to jingles the made in the past, and edit them if they desire.
                         </p>
                         <br ></br>
                         <p className="text-lg">

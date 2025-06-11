@@ -7,15 +7,20 @@ export function NavDrawer() {
   // State to manage the open/closed status of the navigation drawer
   const [isOpen, setIsOpen] = useState(false);
   // State to manage the current theme mode (true for dark, false for light)
-  const [isDarkMode, setIsDarkMode] = useState(() => {
+  const [isDarkMode, setIsDarkMode] = useState(false); // Default to false, will be updated client-side
+
+  // useEffect hook to initialize dark mode from localStorage or system preference
+  // and to apply the dark mode class to the HTML element
+  // and save the preference to local storage whenever isDarkMode changes.
+  useEffect(() => {
     // Initialize dark mode from local storage or default to system preference
     const savedMode = localStorage.getItem('isDarkMode');
     if (savedMode !== null) {
-      return JSON.parse(savedMode);
+      setIsDarkMode(JSON.parse(savedMode));
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setIsDarkMode(true);
     }
-    // Check for system dark mode preference
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  });
+  }, []); // Empty dependency array: runs only once on mount
 
   // useEffect hook to apply the dark mode class to the HTML element
   // and save the preference to local storage whenever isDarkMode changes.
@@ -27,7 +32,10 @@ export function NavDrawer() {
       html.classList.remove('dark'); // Remove 'dark' class for light mode
     }
     // Save the current dark mode preference to local storage
-    localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
+    // Ensure this only runs client-side where localStorage is available
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
+    }
   }, [isDarkMode]); // Dependency array: runs when isDarkMode changes
 
   // Function to open the drawer
