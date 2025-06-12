@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  distDir: "build",
+  output: "export", // This tells Next.js to create a static build
 };
 
 export default nextConfig;
