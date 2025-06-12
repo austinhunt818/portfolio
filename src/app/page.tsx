@@ -17,10 +17,6 @@ export default function Home() {
         <Projects />
 
         <NavDrawer />
-        {/* <p className="text-lg text-center sm:text-left">
-          Here's an interactive like button to show that I can code:
-        </p>
-        <LikeButton /> */}
       </main>
     </div>
   );

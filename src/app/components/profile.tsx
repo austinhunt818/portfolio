@@ -7,8 +7,9 @@ export function Profile() {
                 About Me
             </h1>
             <p className="text-lg text-center sm:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                I am a recent college graduate with a passion for software and web development. I am currently seeking a full-time position where I can apply my skills and continue to grow as a developer.
             </p>
+            
         </div>
     );
 }
