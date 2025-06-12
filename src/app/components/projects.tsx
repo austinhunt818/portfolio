@@ -109,8 +109,8 @@ export function Projects() {
                     </div>
                     <img src='screenshots/view-songs_screenshot.png' alt='Screenshot of jingle view and search screen' className='w-1/2 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
                 </div>
-                <h2 className="text-2xl font-semibold mb-2 self-center">
-                    Try a <a href='https://jingle-composer.vercel.app/index.html'>demo</a>!
+                <h2 className="text-3xl font-semibold mb-2 self-center">
+                     <a href='https://jingle-composer.vercel.app/index.html' className="text-blue-600 dark:text-blue-400 hover:underline">demo</a>!
                 </h2>
             </div>
 
