@@ -21,7 +21,7 @@ export function Profile() {
                 />
                 <img
                     src="/images/sax.jpg"
-                    alt="Austin Hunt"
+                    alt="Austin Hunt with Saxophone"
                     width={550}
                     className=" border-2 border-gray-500 dark:border-gray-800 ml-4"
                 />
