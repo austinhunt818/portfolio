@@ -14,7 +14,7 @@ export function Profile() {
             </p>
             <div className="flex justify-center">
                 <img
-                    src="/images/btmb.jpg"
+                    src="/images/btmb.jpeg"
                     alt="Austin Hunt"
                     width={350}
                     className=" border-2 border-gray-500 dark:border-gray-800"
