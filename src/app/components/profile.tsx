@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-
 export function Profile() {
     return (
         <div id='profile' className="centered-container flex flex-col gap-4 p-8 dark:bg-gray-100 bg-gray-900 dark:text-black text-white rounded-lg shadow-lg w-4/5 mx-auto">
