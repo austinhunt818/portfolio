@@ -2,6 +2,7 @@ import { Projects } from "./components/projects";
 import { NavDrawer } from "./components/navDrawer";
 import { Profile } from "./components/profile";
 import { Socials } from "./components/socials";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
         </h2>
 
         <NavDrawer />
+        <Analytics />
       </main>
     </div>
   );
