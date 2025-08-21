@@ -7,11 +7,10 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* When the `.dark` class is applied to the HTML element, swap the color variables */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @font-face {
@@ -27,17 +26,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.dark-resume-button{
-  background-color: var(--foreground);
-  color: var(--background);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 .resume-button {
