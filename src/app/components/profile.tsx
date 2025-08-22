@@ -2,7 +2,7 @@
 
 export function Profile() {
     return (
-        <div id='profile' className="centered-container flex flex-col gap-4 p-8 dark:bg-gray-100 bg-gray-900 dark:text-black text-white rounded-lg shadow-lg w-4/5 mx-auto">
+        <div id='profile' className="centered-container flex flex-col gap-4 p-8 bg-gray-100 dark:bg-gray-900 text-black dark:text-white rounded-lg shadow-lg w-4/5 mx-auto">
             <h1 className="text-4xl font-bold text-center sm:text-left mb-4">
                 About Me
             </h1>
@@ -10,7 +10,7 @@ export function Profile() {
                 I am a recent college graduate with a passion for software and web development. I am currently seeking a full-time position where I can apply my skills and continue to grow as a developer.
             </p>
             <p className="text-lg text-center sm:text-left">
-                In addition to software development, I also enjoy music. I play many intstruments, but by far the most notable is saxophone. I have gotten to perform for thousands of people with the Blue Thunder Marching Band at Boise State.
+                In addition to software development, I also enjoy music. I play many instruments, but by far the most notable is saxophone. I have gotten to perform for thousands of people with the Blue Thunder Marching Band at Boise State.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <img
