@@ -12,18 +12,16 @@ export function Profile() {
             <p className="text-lg text-center sm:text-left">
                 In addition to software development, I also enjoy music. I play many intstruments, but by far the most notable is saxophone. I have gotten to perform for thousands of people with the Blue Thunder Marching Band at Boise State.
             </p>
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <img
                     src="/images/btmb.jpeg"
                     alt="Austin Hunt"
-                    width={350}
-                    className=" border-2 border-gray-500 dark:border-gray-800"
+                    className="w-full sm:max-w-[350px] border-2 border-gray-500 dark:border-gray-800"
                 />
                 <img
                     src="/images/sax.jpg"
                     alt="Austin Hunt with Saxophone"
-                    width={550}
-                    className=" border-2 border-gray-500 dark:border-gray-800 ml-4"
+                    className="w-full sm:max-w-[550px] border-2 border-gray-500 dark:border-gray-800"
                 />
             </div>
             <p className="text-lg text-center sm:text-left">

@@ -50,9 +50,9 @@ export function Projects() {
                     <img src='logos/docker.svg' alt='Docker' title='Docker' className="h-12 w-12 hover:brightness-150 transition-all"/>             
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center justify-center">
-                    <img src='screenshots/cowhub_owner.png' alt='Cowhub Project Screenshot' className='w-3/5 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
+                    <img src='screenshots/cowhub_owner.png' alt='Cowhub Project Screenshot' className='w-full sm:w-3/5 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
                     {/*TODO: Get a better screenshot of video playback*/}
-                    <img src='screenshots/cowhub_video.png' alt='Cowhub Project Screenshot' className='w-1/4 sm:h-auto rounded-lg border-2 border-gray-500 dark:border-gray-300' />
+                    <img src='screenshots/cowhub_video.png' alt='Cowhub Project Screenshot' className='w-full sm:w-1/4 sm:h-auto rounded-lg border-2 border-gray-500 dark:border-gray-300' />
                 </div>
                 <br></br>
                 <p className="text-lg text-center sm:text-left mb-4">
@@ -85,8 +85,8 @@ export function Projects() {
                 </div>
                 <br></br>
                 <div className="flex flex-col sm:flex-row gap-10 mb-4">
-                    <img src='screenshots/compose_screenshot.png' alt='Screenshot of composition interface' className='w-3/5 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
-                    <div className="w-2/5">
+                    <img src='screenshots/compose_screenshot.png' alt='Screenshot of composition interface' className='w-full sm:w-3/5 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
+                    <div className="w-full sm:w-2/5">
                         <p className="text-lg">
                             Jingle Composer is a web app that allows users to create and save short jingles. I built this app for my final project in my web development class. Being a musician, I wanted to make something interactive and related to music, so I thought a music composition app would be a good fit.
                         </p>
@@ -98,7 +98,7 @@ export function Projects() {
                 </div>
                 <br></br>
                 <div className="flex flex-col sm:flex-row gap-20 mb-4">
-                    <div className="w-2/5">
+                    <div className="w-full sm:w-2/5">
                         <p className="text-lg">
                             Using AWS&apos;s lambdas and dynamoDB, the app allows for the jingles to be saved, loaded, edited, and deleted. The songs are stored as a string, represented by a sequence of note names or dashes. This persistence allows users to come back and listen to jingles the made in the past, and edit them if they desire.
                         </p>
@@ -107,7 +107,7 @@ export function Projects() {
                             The audio portion of the app is handled by a package I found called <a href='https://github.com/danigb/smplr' className='text-blue-600 dark:text-blue-700 hover:underline'>smplr</a>. This package includes a collection of audio samples to use for the notes, as well as a simple interface for playback. Using the different samples, {/* Make sure to implement this feature before publishing */} the user can choose between different instruments, such as piano, guitar, and saxophone.
                         </p>
                     </div>
-                    <img src='screenshots/view-songs_screenshot.png' alt='Screenshot of jingle view and search screen' className='w-1/2 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
+                    <img src='screenshots/view-songs_screenshot.png' alt='Screenshot of jingle view and search screen' className='w-full sm:w-1/2 rounded-lg border-2 border-gray-500 dark:border-gray-300' />
                 </div>
                 <h2 className="text-3xl font-semibold mb-2 self-center">
                      Try a <a href='https://jingle-composer.vercel.app/index.html' className="text-blue-600 dark:text-blue-400 hover:underline">demo</a>!
